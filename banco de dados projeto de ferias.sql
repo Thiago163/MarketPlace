@@ -22,8 +22,8 @@ CREATE TABLE Categoria(
 );
 
 CREATE TABLE CategoriasProduto(
-    Produto INT NOT NULL,
     Categoria INT NOT NULL,
+    Produto INT NOT NULL,
     foreign key (Categoria) references Categoria(id),
     foreign key (Produto) references Produto(id)
 );
@@ -93,14 +93,15 @@ CREATE TABLE CategoriasProduto(
     ("Produtos geral");
     
     insert into CategoriasProduto values
-    (1, 2),
-    (2, 1),
+    (1, 1),
+    (2, 2),
+    (3, 3),
     (3, 3),
     (4, 4),
-    (5, 1),
-    (6, 3),
-    (7, 4),
-    (8, 1);
+    (5, 5),
+    (6, 6),
+    (7, 7),
+	(8, 8);
     
     select * from Lojista, Produto, Categoria;
     select * from Lojista, Categoria, Produto where preco > 100.00;
