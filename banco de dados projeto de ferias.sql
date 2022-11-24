@@ -63,11 +63,11 @@ CREATE TABLE CategoriasProduto(
     (default, "Morango", 10.00, "muito bom", 2),
     (default, "Fini", 4.00, "Sabor de menta", 3),
     (default, "Vassoura", 20.00, "ruim", 3),
-	(default, "Vassoura", 15.00, "ruim", 3),
+    (default, "Vassoura", 15.00, "ruim", 3),
     (default, "Desifetante", 10.00, "cheiroso", 3),
-	(default, "Amaciante", 8.00, "De boa qualidade", 3),
-	(default, "Pasta de dente", 4.00, "Sabor morango", 3),
-	(default, "Pasta de dente", 4.00, "Sabor de menta", 3),
+    (default, "Amaciante", 8.00, "De boa qualidade", 3),
+    (default, "Pasta de dente", 4.00, "Sabor morango", 3),
+    (default, "Pasta de dente", 4.00, "Sabor de menta", 3),
     (default, "Alcool", 7.00, "De boa qualidade", 3),
     (default, "Amaciante", 10.00, "De má qualidade", 3),
     (default, "Vassoura", 20.00, "ruim", 3),
@@ -101,7 +101,7 @@ CREATE TABLE CategoriasProduto(
     (5, 5),
     (6, 6),
     (7, 7),
-	(8, 8);
+    (8, 8);
     
     select * from Lojista, Produto, Categoria;
     select * from Lojista, Categoria, Produto where preco > 100.00;
