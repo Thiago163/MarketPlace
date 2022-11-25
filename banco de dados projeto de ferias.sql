@@ -1,4 +1,6 @@
+-- derruba banco de dados --
 drop database MarketPlace;
+-- cria banco de dados --
 CREATE DATABASE MarketPlace;
 USE MarketPlace;
 
@@ -22,10 +24,8 @@ CREATE TABLE Categoria(
 );
 
 CREATE TABLE CategoriasProduto(
-    Categoria INT NOT NULL,
     Produto INT NOT NULL,
-    foreign key (Categoria) references Categoria(id),
-    foreign key (Produto) references Produto(id)
+    Categoria INT NOT NULL
 );
     
     insert into Lojista(nome) values
@@ -35,7 +35,7 @@ CREATE TABLE CategoriasProduto(
     ("Ludmilla"),
     ("Sete minutos"),
     ("Ivete"),
-    ("kamaitachi"),
+    ("Kamaitachi"),
     ("Anita");
     
     insert into Produto values
@@ -44,7 +44,7 @@ CREATE TABLE CategoriasProduto(
     (default, "Computador I7", 500.00, "Computador muito bom", 1),
     (default, "Computador i5", 100.00, "Computador muito bom", 1),
     (default, "Celular Moto g20", 1000.00, "Celular usado", 1),
-    (default, "Fone de ouvido gamer", 300.00, "Celular usado", 1),
+    (default, "Fone de ouvido gamer", 300.00, "Novo pronto para usar", 1),
     (default, "Fone de ouvido comum", 300.00, "Novo", 1),
     (default, "Playstation 5", 5000.00, "usado", 1),
     (default, "Playstation 4", 1000.00, "usado", 1),
@@ -140,12 +140,15 @@ CREATE TABLE CategoriasProduto(
     (7, 7),
     (8, 8);
     
+    -- primeiro select --
     select * from Lojista, Produto, Categoria;
+    -- ############# --
+    -- segundo select --
     select * from Lojista, Categoria, Produto where preco > 100.00;
+    -- ############# --
     
-    select * from Lojista, CategoriasProduto where "Alimentos";
+    select * from Lojista, Produdo, Categoria where id = 1;
     
     select * from Lojista, Categoria, Produto where "Alimentos";
-    select * from CategoriasProduto, Lojista where nome = "Vendedor falido";
+    select * from Categoria, Produto, Lojista where nome = "Anita";
     select * from Lojista, Produto, Categoria where nome = "Alimentos" && "Eletronicos";
-   
