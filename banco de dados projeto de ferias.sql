@@ -29,15 +29,13 @@ CREATE TABLE CategoriasProduto(
 );
     
     insert into Lojista(nome) values
-    ("Vendedor falido"),
-    ("Vendedor de sucesso"),
-    ("Oque estou fazendo aqui?"),
-    ("Danoninho semi gratis"),
-    ("Vendedor de todinho"),
+    ("Luan Santana"),
+    ("Travis Scott"),
+    ("Marshmallow"),
+    ("Ludmilla"),
+    ("Sete minutos"),
     ("Ivete"),
-    ("Vendedor safado"),
-    ("Oque era para eu fazer aqui?"),
-    ("Danoninho semi pago"),
+    ("kamaitachi"),
     ("Anita");
     
     insert into Produto values
