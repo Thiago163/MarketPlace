@@ -272,3 +272,11 @@ where Produto.ID = CategoriasProduto.Produto
 and Categoria.ID = CategoriasProduto.Categoria
 and Categoria.ID between 2 and 3;
 -- ############# --
+--  Todos os anteriores por preço Bonus --
+select Lojista.ID as LOJISTAID, Lojista.Nome as LOJISTA, Produto.ID as PRODUTOID, Produto.Nome as NOME, Produto.Preco as PREÇO, Produto.Descricao as DESCRIÇÂO, Categoria.ID as CATEGORIAID, Categoria.Nome as CATEGORIA
+from Lojista, Produto, Categoria, CategoriasProduto
+where Lojista.ID = Produto.Lojista
+and Produto.ID = CategoriasProduto.Produto
+and Categoria.ID = CategoriasProduto.Categoria
+and Produto order by Produto.Preco asc ;
+-- ############# --
