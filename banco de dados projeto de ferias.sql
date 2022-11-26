@@ -210,14 +210,31 @@ CREATE TABLE CategoriasProduto(
     (77, 8),
     (78, 8),
     (79, 8),
-    (80, 8);
-    
-    -- primeiro select --
-    select * from Lojista, Produto, Categoria;
+    (80, 8),
     -- ############# --
-    -- segundo select --
-    select * from Lojista, Categoria, Produto where preco > 100.00;
-    -- ############# --
+    (51, 8),
+    (52, 8),
+    (53, 8),
+    (54, 8),
+    (55, 8),
+    (56, 8),
+    (57, 8),
+    (58, 8),
+    (59, 8),
+    (60, 8),
+    (61, 8),
+    (62, 8),
+    (63, 8),
+    (64, 8),
+    (65, 8),
+    (66, 8),
+    (67, 8),
+    (68, 8),
+    (69, 8),
+    (70, 8),
+    (77, 7),
+    (78, 7),
+    (79, 7);
     
     -- select tudo junto select --
 select Lojista.ID as LOJISTAID, Lojista.Nome as LOJISTA, Produto.ID as PRODUTOID, Produto.Nome as NOME, Produto.Preco as preco, Produto.Descricao as DESCRIÇÂO, Categoria.ID as CATEGORIAID, Categoria.Nome as CATEGORIA
@@ -226,9 +243,23 @@ where Lojista.ID = Produto.Lojista
 and Produto.ID = CategoriasProduto.Produto
 and Categoria.ID = CategoriasProduto.Categoria;
 -- ############# --
-    
-    select * from Lojista, Produdo, Categoria where id = 1;
-    
-    select * from Lojista, Categoria, Produto where "Alimentos";
-    select * from Categoria, Produto, Lojista where nome = "Anita";
-    select * from Lojista, Produto, Categoria where nome = "Alimentos" && "Eletronicos";
+-- select todos produtos de uma categoria --
+select Produto.ID as PRODUTOID, Produto.Nome as NOME, Produto.Preco as PREÇO, Produto.Descricao as DESCRIÇÂO, Categoria.ID as CATEGORIAID, Categoria.Nome as CATEGORIA
+from Produto, Categoria, CategoriasProduto
+where Produto.ID = CategoriasProduto.Produto
+and Categoria.ID = CategoriasProduto.Categoria
+and Categoria.Nome = 'Alimentos';
+-- ############# --
+--  Todos os produtos de um único lojista --
+select Lojista.ID as LOJISTAID, Lojista.Nome as LOJISTA, Produto.ID as PRODUTOID, Produto.Nome as NOME, Produto.Preco as PREÇO, Produto.Descricao as DESCRIÇÂO
+from Produto, Lojista
+where Lojista.ID = Produto.Lojista
+and Lojista.Nome = 'Anita';
+-- ############# --
+-- Todos os produtos de duas categorias --
+select Produto.ID as PRODUTOID, Produto.Nome as NOME, Produto.Preco as PREÇO, Produto.Descricao as DESCRIÇÂO, Categoria.ID as CATEGORIAID, Categoria.Nome as CATEGORIA
+from Produto, Categoria, CategoriasProduto
+where Produto.ID = CategoriasProduto.Produto
+and Categoria.ID = CategoriasProduto.Categoria
+and Categoria.ID between 2 and 3;
+-- ############# --
