@@ -237,14 +237,14 @@ CREATE TABLE CategoriasProduto(
     (79, 7);
     
 -- select todos logistas, produtos, categorias --
-select Lojista.ID as LOJISTAID, Lojista.Nome as LOJISTA, Produto.ID as PRODUTOID, Produto.Nome as NOME, Produto.Preco as preco, Produto.Descricao as DESCRIÇÂO, Categoria.ID as CATEGORIAID, Categoria.Nome as CATEGORIA
+select Lojista.ID as VendedorID, Lojista.Nome as Vendedor, Produto.ID as ID_Do_Produto, Produto.Nome as Nome, Produto.Preco as Preço, Produto.Descricao as Descrição_do_produto, Categoria.ID as ID_da_Categoria, Categoria.Nome as Catogoria_do_produto
 from Lojista, Produto, Categoria, CategoriasProduto
 where Lojista.ID = Produto.Lojista
 and Produto.ID = CategoriasProduto.Produto
 and Categoria.ID = CategoriasProduto.Categoria;
 -- ############# --
 -- select todos produtos acima de 100 reais --
-select Lojista.ID as LOJISTAID, Lojista.Nome as LOJISTA, Produto.ID as PRODUTOID, Produto.Nome as NOME, Produto.Preco as PREÇO, Produto.Descricao as DESCRIÇÂO, Categoria.ID as CATEGORIAID, Categoria.Nome as CATEGORIA
+select Lojista.ID as VendedorID, Lojista.Nome as Vendedor, Produto.ID as ID_Do_Produto, Produto.Nome as Nome, Produto.Preco as Preço, Produto.Descricao as Descrição_do_produto, Categoria.ID as ID_da_Categoria, Categoria.Nome as Catogoria_do_produto
 from Lojista, Produto, Categoria, CategoriasProduto
 where Lojista.ID = Produto.Lojista
 and Produto.ID = CategoriasProduto.Produto
@@ -253,14 +253,14 @@ and Produto.Preco > 100
 and Produto order by Produto.Preco asc;
 -- ############# --
 -- select todos produtos de uma categoria --
-select Produto.ID as PRODUTOID, Produto.Nome as NOME, Produto.Preco as PREÇO, Produto.Descricao as DESCRIÇÂO, Categoria.ID as CATEGORIAID, Categoria.Nome as CATEGORIA
+select Produto.ID as ID_Do_Produto, Produto.Nome as Nome, Produto.Preco as Preço_do_produto, Produto.Descricao as Descrição_do_produto, Categoria.ID as ID_da_Categoria, Categoria.Nome as Catogoria_do_produto
 from Produto, Categoria, CategoriasProduto
 where Produto.ID = CategoriasProduto.Produto
 and Categoria.ID = CategoriasProduto.Categoria
 and Categoria.Nome = 'Alimentos';
 -- ############# --
 --  Todos os produtos de um único lojista --
-select Lojista.ID as LOJISTAID, Lojista.Nome as LOJISTA, Produto.ID as PRODUTOID, Produto.Nome as NOME, Produto.Preco as PREÇO, Produto.Descricao as DESCRIÇÂO
+select Lojista.ID as LOJISTAID, Lojista.Nome as LOJISTA, Produto.ID as PRODUTOID, Produto.Nome as NOME, Produto.Preco as Preço_do_produto, Produto.Descricao as Descrição
 from Produto, Lojista
 where Lojista.ID = Produto.Lojista
 and Lojista.Nome = 'Kamaitachi';
