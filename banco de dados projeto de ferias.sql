@@ -92,12 +92,12 @@ CREATE TABLE CategoriasProduto(
     (default, "Memória ram", 80.00, "De boa qualidade", 6),
     (default, "Processador i9", 8000.00, "De boa qualidade", 6),
     (default, "Processador i9", 8000.00, "De boa qualidade", 6),
-    (default, "Processador i7", 4000.00, "Distribuida pela Intel", 6),
+    (default, "Processador i7", 4000.70, "Distribuida pela Intel", 6),
     (default, "Amd ryzem 5", 18.00, "Distribuida pela AMD", 6),
     (default, "Copo plástico", 8.00, "Distribuida pela amazon", 6),
-    (default, "Copo de vidro", 80.00, "Feito na china", 6),
+    (default, "Copo de vidro", 80.90, "Feito na china", 6),
     (default, "Colher", 1.00, "Feito na Malásia", 6),
-    (default, "Brinco", 2.00, "Feito na Malásia", 6),
+    (default, "Brinco", 2.03, "Feito na Malásia", 6),
     (default, "Calça", 80.00, "De boa qualidade", 6),
     (default, "Calça", 45.00, "Feito no chile", 7),
     (default, "Calça", 22.00, "Feito no chile", 7),
@@ -236,12 +236,21 @@ CREATE TABLE CategoriasProduto(
     (78, 7),
     (79, 7);
     
-    -- select tudo junto select --
+-- select todos logistas, produtos, categorias --
 select Lojista.ID as LOJISTAID, Lojista.Nome as LOJISTA, Produto.ID as PRODUTOID, Produto.Nome as NOME, Produto.Preco as preco, Produto.Descricao as DESCRIÇÂO, Categoria.ID as CATEGORIAID, Categoria.Nome as CATEGORIA
 from Lojista, Produto, Categoria, CategoriasProduto
 where Lojista.ID = Produto.Lojista
 and Produto.ID = CategoriasProduto.Produto
 and Categoria.ID = CategoriasProduto.Categoria;
+-- ############# --
+-- select todos produtos acima de 100 reais --
+select Lojista.ID as LOJISTAID, Lojista.Nome as LOJISTA, Produto.ID as PRODUTOID, Produto.Nome as NOME, Produto.Preco as PREÇO, Produto.Descricao as DESCRIÇÂO, Categoria.ID as CATEGORIAID, Categoria.Nome as CATEGORIA
+from Lojista, Produto, Categoria, CategoriasProduto
+where Lojista.ID = Produto.Lojista
+and Produto.ID = CategoriasProduto.Produto
+and Categoria.ID = CategoriasProduto.Categoria
+and Produto.Preco > 100
+and Produto order by Produto.Preco asc;
 -- ############# --
 -- select todos produtos de uma categoria --
 select Produto.ID as PRODUTOID, Produto.Nome as NOME, Produto.Preco as PREÇO, Produto.Descricao as DESCRIÇÂO, Categoria.ID as CATEGORIAID, Categoria.Nome as CATEGORIA
@@ -254,7 +263,7 @@ and Categoria.Nome = 'Alimentos';
 select Lojista.ID as LOJISTAID, Lojista.Nome as LOJISTA, Produto.ID as PRODUTOID, Produto.Nome as NOME, Produto.Preco as PREÇO, Produto.Descricao as DESCRIÇÂO
 from Produto, Lojista
 where Lojista.ID = Produto.Lojista
-and Lojista.Nome = 'Anita';
+and Lojista.Nome = 'Kamaitachi';
 -- ############# --
 -- Todos os produtos de duas categorias --
 select Produto.ID as PRODUTOID, Produto.Nome as NOME, Produto.Preco as PREÇO, Produto.Descricao as DESCRIÇÂO, Categoria.ID as CATEGORIAID, Categoria.Nome as CATEGORIA
