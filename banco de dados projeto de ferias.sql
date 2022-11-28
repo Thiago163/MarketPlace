@@ -122,9 +122,9 @@ CREATE TABLE CategoriasProduto(
     (default, "Duck guy", 80.00, "Brinquedo para adultos, Red Guy é um dos principais protagonistas, em Don't Hug Me I'm Scared, juntamente com Duck Guy e Yellow Guy.", 8),
     (default, "Calça Termica Camara Fria Frigorífico Resistente Com Ca E Nf", 119.90, "calça termica para camara fria calça para câmara fria calça termica camara fria calça termica frigorifico calça para camara fria calça térmica para câmara fria ca 10976", 8),
     (default, "Almofada Fábrica Pet Barbie Cinza para Cães e Gatos", 214.99, "- Indicada para cães e gatos; - Proporciona maior conforto e bem estar ao seu pet; - Opção ideal para os momentos de relaxamento do seu amiguinho peludo; - Permite maior estabilidade para as posições; - Disponível em embalagem com 1 unidade.", 9),
-	(default, "Brinquedo Macaco Petz", 31.99, "É natural que o seu pet fique entusiasmado diante de um brinquedo novo e que vá com muita para usá-lo.  Este comportamento demonstra que ele é saudável e tem energia para gastar. Para garantir a segurança do seu animal de estimação, acompanhe SEMPRE como ele interage com a novidade, por vários dias, se for preciso, até sentir que já pode deixá-lo brincar à vontade.", 9),
+    (default, "Brinquedo Macaco Petz", 31.99, "É natural que o seu pet fique entusiasmado diante de um brinquedo novo e que vá com muita para usá-lo.  Este comportamento demonstra que ele é saudável e tem energia para gastar. Para garantir a segurança do seu animal de estimação, acompanhe SEMPRE como ele interage com a novidade, por vários dias, se for preciso, até sentir que já pode deixá-lo brincar à vontade.", 9),
     (default, "Brinquedo de Pelúcia Chalesco Crocodilo", 27.99, "- Indicado para cães; - Divertido e criativo; - Ajuda a combater o estresse do seu pet; - Possui textura macia de pelúcia.", 9),
-	(default, "Brinquedo Chalesco Para Cães Lagosta Vinil Vermelho", 19.90, "- Indicado para cães; - Ajuda a combater o estresse do seu pet; - Ideal para pets que ficam muito tempo sozinhos; - Faz som quando seu pet morder o brinquedo;", 9),
+    (default, "Brinquedo Chalesco Para Cães Lagosta Vinil Vermelho", 19.90, "- Indicado para cães; - Ajuda a combater o estresse do seu pet; - Ideal para pets que ficam muito tempo sozinhos; - Faz som quando seu pet morder o brinquedo;", 9),
     (default, "Boneca Barbie Banho De Espuma Mattel", 179.90, "A Boneca Barbie Banho de Espuma com o tema Spa contém 1 barbie, 1 filhote, 1 banheira de Hidromassagem e acessórios para você brincar, a boneca também pode relaxar com 1 bandeja de banheira, produtos de banho, bucha, escova e uma tolha.", 9),
     (default, "CARRINHO DE FRICÇÃO SPEED", 17.99, "Constituído de plástico é um produto de tamanho médio, movido a fricção. Leve e divertido, tornará suas brincadeiras ainda heroicas ao lado de seu personagem favorito.", 9),
     (default, "Hotwheels - Novo Sortimento - Carrinhos Basicos Mattel", 15.30, "Hotwheels - Novo Sortimento - Carrinhos Basicos - Mattelcarrinho Sortido Hotwheels Obs:valor Por Unidade Os Carrinhos Vem Lacrados Sem Opção De Escolha De Modelos Imagens Meramente Ilustrativas", 9),
@@ -132,10 +132,10 @@ CREATE TABLE CategoriasProduto(
     (default, "Hulk 629 - Marvel Avengers Games - Funko Pop", 149.83, "Hulk 629 - Marvel Avengers Games - Funko Pop . O mundo Pop vai invadir a casa e a brincadeira das crianças Fabricado em PVC, o boneco Pop da Funko traz os personagens favoritos das crianças e adolescentes em uma coleção incrível de bonecos. ", 9),
     (default, "Lego Marvel Studios Capacete Do Homem De Ferro Lego",  644.00, "Atenção: Esse Produto Não Pode Ser Faturado Para Cnpj. Pedimos A Gentileza De Efetuar A Compra Com Um Cpf!lego Marvel Studios Capacete Do Homem De Ferro Legolego Marvel Studios Capacete Do Homem De Ferro - Lego 76165", 9),
     (default, "Livro Disney Verde Pateta Faz Historia Capa Dura", 89.90, "Neste terceiro volume, mais sátiras e paródias de grandes personagens da História e da ficção, como Benjamin Franklin, O Médico e O Monstro, Ascensão e Queda do Império Romano, Arquimedes, Gêngis Khan, o Homem Invisível, Hércules e Louis Pasteur.", 10),
-	(default, "Conan, o Bárbaro - Livro 1 - Robert E. Howard", 100.00, "O menor preço encontrado no Brasil para Conan, o Bárbaro - Livro 1 - Robert E. Howard ", 10),
+    (default, "Conan, o Bárbaro - Livro 1 - Robert E. Howard", 100.00, "O menor preço encontrado no Brasil para Conan, o Bárbaro - Livro 1 - Robert E. Howard ", 10),
     (default, "As obras revolucionárias de George Orwell - Box com 3 livros", 500.00, "George Orwell é um dos escritores mais importantes do século XX. Foi autor de romances, ensaios, críticas e artigos jornalísticos, com textos de fácil compreensão, inteligentes e críticos, apontando as injustiças sociais. Suas obras trazem oposição ao totalitarismo, o que as tornaram influentes na cultura popular, mas também na política. Conheça a essência de Orwell em 1984, A revolução dos bichos e Dentro da baleia e outros ensaios.", 10),
-	(default, "George Orwell", 200.00, "ublicado em 1949, o texto de Orwell nasceu destinado à polêmica. Traduzido em mais de sessenta países, virou minissérie, filmes, quadrinhos, mangás e até uma ópera. Ganhou holofotes em 1999, quando uma produtora holandesa batizou seu reality show de Big Brother. 1984 foi responsável pela popularização de muitos termos e conceitos, como Grande Irmão, duplopensar, novidioma, buraco da memória e 2 2 5. ", 10),
-	(default, "George Orwell 3", 300.00, "ublicado em 1949, o texto de Orwell nasceu destinado à polêmica. Traduzido em mais de sessenta países, virou minissérie, filmes, quadrinhos, mangás e até uma ópera. Ganhou holofotes em 1999, quando uma produtora holandesa batizou seu reality show de Big Brother. 1984 foi responsável pela popularização de muitos termos e conceitos, como Grande Irmão, duplopensar, novidioma, buraco da memória e 2 2 5. ", 10),
+    (default, "George Orwell", 200.00, "ublicado em 1949, o texto de Orwell nasceu destinado à polêmica. Traduzido em mais de sessenta países, virou minissérie, filmes, quadrinhos, mangás e até uma ópera. Ganhou holofotes em 1999, quando uma produtora holandesa batizou seu reality show de Big Brother. 1984 foi responsável pela popularização de muitos termos e conceitos, como Grande Irmão, duplopensar, novidioma, buraco da memória e 2 2 5. ", 10),
+    (default, "George Orwell 3", 300.00, "ublicado em 1949, o texto de Orwell nasceu destinado à polêmica. Traduzido em mais de sessenta países, virou minissérie, filmes, quadrinhos, mangás e até uma ópera. Ganhou holofotes em 1999, quando uma produtora holandesa batizou seu reality show de Big Brother. 1984 foi responsável pela popularização de muitos termos e conceitos, como Grande Irmão, duplopensar, novidioma, buraco da memória e 2 2 5. ", 10),
     (default, "Gente pobre", 300.00, "rimeira obra de Dostoiévski, Gente pobre mostra ao leitora dura realidade vivida pelos moradores de São Petesburgo, no século XIX por meio das cartas trocadas entre os protagonistas. Apesar de ter sido escrita quando o autor tinha apenas 24 anos foi sua primeira publicação, a obra já reflete a genialidade daquele que se tornou um dos grandes nomes da literatura russa. ", 10),
     (default, "De quanta terra precisa um homem?", 300.00, "Nesta coleção de quatro contos, Tolstói fala das coisas que realmente importam na vida, abordando com leveza temas sérios como teologia, filosofia e natureza humana trazendo ensinamentos inesquecíveis e significados profundos em uma leitura cativante.", 10),
     (default, "Livro do desassossego", 350.00, "Os fragmentos que compõem esta complexa obra representam a inquietude, os sentimentos, as dúvidas e o amplo conhecimento de mundo daquele que segurava a caneta para escrever tão profundas palavras e ao fim assinar sob o semi-heterônimo de Bernardo Soares.", 10),
@@ -151,7 +151,7 @@ CREATE TABLE CategoriasProduto(
     ("Novos"),
     ("Usados"),
     ("Produtos geral"),
-	("Brinquedos"),
+    ("Brinquedos"),
     ("Livros");
     
     insert into CategoriasProduto values
@@ -280,7 +280,7 @@ CREATE TABLE CategoriasProduto(
     (78, 7),
     (80, 7),
     (79, 7),
-	(77, 7),
+    (77, 7),
     (78, 7),
     (80, 7),
     (79, 7),
@@ -297,7 +297,7 @@ CREATE TABLE CategoriasProduto(
     (71, 7),
     (76, 1),
     (79, 9),
-	(77, 9),
+    (77, 9),
     (78, 9),
     (10, 6);
     
