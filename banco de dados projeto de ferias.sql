@@ -33,10 +33,10 @@ CREATE TABLE CategoriasProduto(
     ("Travis Scott"),
     ("Marshmallow"),
     ("Ludmilla"),
-    ("Sete minutos"),
+    ("Mick Jackson"),
     ("Ivete"),
     ("Kamaitachi"),
-	("Madona"),
+    ("Madona"),
     ("Billie Eilish"),
     ("Anita");
     
